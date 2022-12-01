@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright (c) 2017, Gluon and/or its affiliates.
+    All rights reserved. Use is subject to license terms.
+
+    This file is available and licensed under the following license:
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+   - Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+   - Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in
+     the documentation and/or other materials provided with the distribution.
+   - Neither the name of Oracle Corporation and Gluon nor the names of its
+     contributors may be used to endorse or promote products derived
+     from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:controller="com.mom_pop_pizza.app.controllers.RegistrationController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="926.0" prefWidth="428.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="21.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../images/arrowIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="216.0" layoutX="109.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/TextOnly_NoBuffer.png" />
+         </image>
+      </ImageView>
+      <Button onAction="#createCustomer" layoutX="20.0" layoutY="843.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="47.0" prefWidth="387.0" style="-fx-background-color: #f81b22;" text="Continue" textFill="WHITE">
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         <font>
+            <Font name="Montserrat SemiBold" size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane prefHeight="47.0" prefWidth="428.0" style="-fx-background-color: #f81b22;" />
+      <VBox layoutX="21.0" layoutY="164.0" prefHeight="269.0" prefWidth="388.0" spacing="10.0">
+         <children>
+            <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="387.0" promptText="CC Number" />
+            <TextField layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="387.0" promptText="Exp." />
+            <TextField fx:id="txtFld_zipcode" layoutX="10.0" layoutY="67.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="387.0" promptText="Zipcode" />
+            <TextField layoutX="10.0" layoutY="124.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="387.0" promptText="Sec. Code" />
+            <CheckBox mnemonicParsing="false" text="Same Address as Delivery?" textFill="#f81b22">
+               <font>
+                  <Font name="Nunito Regular" size="15.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </VBox>
+      <Text fill="#f81b22" layoutX="21.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create your Pizzeria Profile">
+         <font>
+            <Font name="Nunito Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#f81b22" layoutX="21.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Information">
+         <font>
+            <Font name="Nunito Regular" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#f81b22" layoutX="20.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Billing Address">
+         <font>
+            <Font name="Nunito Bold" size="18.0" />
+         </font>
+      </Text>
+      <VBox layoutX="14.0" layoutY="468.0" prefHeight="219.0" prefWidth="388.0" spacing="10.0">
+         <children>
+            <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="387.0" promptText="Address" />
+            <TextField layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="387.0" promptText="Suite #" />
+            <TextField layoutX="10.0" layoutY="67.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="387.0" promptText="Zipcode" />
+            <TextField layoutX="10.0" layoutY="124.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="387.0" promptText="City" />
+            <TextField layoutX="10.0" layoutY="181.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="387.0" promptText="State" />
+         </children>
+      </VBox>
+      <Label layoutX="21.0" layoutY="762.0" prefHeight="17.0" prefWidth="264.0" text="Error: Incorrect field entry" textFill="#f81b22" />
+   </children>
+</Pane>
